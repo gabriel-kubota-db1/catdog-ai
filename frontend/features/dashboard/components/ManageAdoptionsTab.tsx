@@ -1,7 +1,6 @@
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { fetchAdoptionRequests, updateAdoptionRequestStatus } from '@/http/AdoptionHttpService';
 import { Table, Button, Space, Tag, App, Spin } from 'antd';
-import { CheckOutlined, CloseOutlined } from '@ant-design/icons';
 import dayjs from 'dayjs';
 
 const ManageAdoptionsTab = () => {
@@ -51,8 +50,8 @@ const ManageAdoptionsTab = () => {
         <Space size="middle">
           {record.status === 'pending' && (
             <>
-              <Button icon={<CheckOutlined />} onClick={() => handleUpdateStatus(record.id, 'approved')} style={{ color: 'green', borderColor: 'green' }}>Approve</Button>
-              <Button icon={<CloseOutlined />} onClick={() => handleUpdateStatus(record.id, 'denied')} danger>Deny</Button>
+              <Button onClick={() => handleUpdateStatus(record.id, 'approved')} style={{ color: 'green', borderColor: 'green' }}>Approve</Button>
+              <Button onClick={() => handleUpdateStatus(record.id, 'denied')} danger>Deny</Button>
             </>
           )}
         </Space>

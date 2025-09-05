@@ -1,0 +1,6 @@
+projectKey=catdog-ia
+serverUrl=https://sonar.lughy.com.br
+serverVersion=25.9.0.112764
+dashboardUrl=https://sonar.lughy.com.br/dashboard?id=catdog-ia
+ceTaskId=cd01959e-2ea2-4fbc-a380-aeaa72a34f3a
+ceTaskUrl=https://sonar.lughy.com.br/api/ce/task?id=cd01959e-2ea2-4fbc-a380-aeaa72a34f3a
